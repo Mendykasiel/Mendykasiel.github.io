@@ -3,74 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מדיניות פרטיות | MK — דיווחי גנים</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<title>מדיניות פרטיות | MK Flow</title>
+<meta name="description" content="מדיניות הפרטיות של MK Flow — מה נאסף באתר זה, ומה נאסף בשירות דיווחי הנוכחות בוואטסאפ.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%232b3446'/><text x='32' y='45' font-size='34' font-family='Arial,sans-serif' font-weight='bold' text-anchor='middle' fill='%23ffffff'>M<tspan fill='%23c4747d'>K</tspan></text></svg>">
 <style>
-  :root{--navy:#2b3446;--navy-deep:#1f2635;--burgundy:#7a2c33;--bg:#faf9f7;--text:#2b3446;--muted:#6b7280;--line:#e7e4df}
+  :root{
+    --navy:#2b3446;--navy-deep:#1f2635;--burgundy:#7a2c33;--burgundy-light:#9c3a43;
+    --bg:#faf9f7;--card:#ffffff;--text:#2b3446;--muted:#5c6471;--line:#ddd9d3;
+    --on-dark:#f2f3f5;--on-dark-muted:#ccd0d8;
+  }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Heebo',-apple-system,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-  header{background:var(--navy);color:#fff;padding:14px 0}
-  header .wrap{display:flex;align-items:center;justify-content:space-between}
-  .mk-mark{font-weight:900;font-size:1.3rem}
-  .mk-mark .k{color:#9c3a43}
-  header a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.95rem}
-  main{padding:48px 0 64px}
-  h1{font-size:1.9rem;font-weight:900;margin-bottom:6px}
-  .updated{color:var(--muted);font-size:.9rem;margin-bottom:32px}
-  h2{font-size:1.2rem;font-weight:700;margin:28px 0 8px}
-  p,li{color:#3d4557}
-  ul{padding-inline-start:22px}
+  body{
+    font-family:"Segoe UI","Arial Hebrew",Arial,"Noto Sans Hebrew",system-ui,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.8;font-size:1.0625rem;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:0 24px}
   a{color:var(--burgundy)}
-  footer{background:var(--navy-deep);color:rgba(255,255,255,.75);padding:26px 0;text-align:center;font-size:.9rem}
+  a:hover{color:var(--burgundy-light)}
+  :focus-visible{outline:3px solid var(--burgundy);outline-offset:3px;border-radius:3px}
+
+  .skip{position:absolute;right:-9999px;top:0;background:#fff;color:var(--burgundy);padding:10px 18px;font-weight:700;z-index:10;border:2px solid var(--burgundy)}
+  .skip:focus{right:12px;top:12px}
+
+  header{background:var(--navy);color:var(--on-dark);padding:16px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .mk-mark{font-weight:800;font-size:1.3rem}
+  .mk-mark .k{color:#e0959d}
+  header a{color:var(--on-dark);text-decoration:none;font-size:.96rem}
+  header a:hover{text-decoration:underline}
+  header :focus-visible{outline-color:#fff}
+
+  main{padding:44px 0 60px}
+  h1{font-size:clamp(1.6rem,4vw,2.1rem);font-weight:800;margin-bottom:6px}
+  .updated{color:var(--muted);font-size:.92rem;margin-bottom:28px}
+  h2{font-size:1.25rem;font-weight:800;margin:34px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+  h3{font-size:1.05rem;font-weight:700;margin:22px 0 6px}
+  p{margin-bottom:12px}
+  ul{padding-inline-start:24px;margin-bottom:12px}
+  li{margin-bottom:6px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:16px 0}
+  .box p:last-child{margin-bottom:0}
+  .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+
+  footer{background:var(--navy-deep);color:var(--on-dark-muted);padding:32px 0;font-size:.93rem}
+  footer .legal{color:var(--on-dark);font-weight:700;font-size:1rem}
+  footer p{margin-top:6px;margin-bottom:0}
+  footer ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;padding:0}
+  footer a{color:var(--on-dark)}
+  footer a:hover{color:#fff}
+  footer :focus-visible{outline-color:#fff}
 </style>
 </head>
 <body>
 
+<a class="skip" href="#main">דילוג לתוכן המרכזי</a>
+
 <header>
   <div class="wrap">
-    <div class="mk-mark">M<span class="k">K</span> · דיווחי גנים</div>
-    <a href="index.html">→ חזרה לדף הבית</a>
+    <span class="mk-mark">M<span class="k">K</span> · Flow</span>
+    <nav aria-label="ניווט משני">
+      <a href="index.html">חזרה לדף הבית</a>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 <div class="wrap">
+
   <h1>מדיניות פרטיות</h1>
-  <div class="updated">עדכון אחרון: אוגוסט 2026</div>
+  <p class="updated">עדכון אחרון: ספטמבר 2026</p>
 
-  <p>"MK — דיווחי גנים" (להלן: "השירות") היא מערכת לקליטת דיווחי נוכחות ומסמכים מצוותי גני ילדים באמצעות WhatsApp, וריכוזם עבור הנהלת הגן לצורך הכנת שכר. מדיניות זו מסבירה איזה מידע נאסף, למה, ומה נעשה בו.</p>
+  <p>מדיניות זו מתארת איזה מידע אישי נאסף על ידי <strong>MK Flow</strong>, לאיזו מטרה, מה נעשה בו, ואילו זכויות עומדות לכם לפי חוק הגנת הפרטיות, התשמ"א-1981 (לרבות לאחר תיקון 13 לחוק).</p>
 
-  <h2>איזה מידע נאסף</h2>
+  <div class="box">
+    <p><strong>בעל המידע ואיש הקשר לפניות בנושא פרטיות:</strong></p>
+    <p>קסטיאל מנחם מענדל (עוסק פטור 208553966), שם מסחרי: MK Flow<br>
+    ברניקי 9 א, דירה 1, ירושלים 9330615<br>
+    דוא"ל: <a href="mailto:kastielmm@gmail.com" aria-label="שלחו לנו דוא&quot;ל: kastielmm@gmail.com"><span class="ltr">kastielmm@gmail.com</span></a> · טלפון: <a href="tel:+972555700457" aria-label="התקשרו אלינו: 055-5700457"><span class="ltr">055-5700457</span></a></p>
+  </div>
+
+  <p>המדיניות מחולקת לשני חלקים, מפני שמדובר בשני דברים שונים: <strong>אתר האינטרנט הזה</strong>, ו<strong>שירות דיווחי הנוכחות בוואטסאפ</strong> שהעסק מפעיל עבור לקוחותיו.</p>
+
+  <h2>חלק א' — אתר האינטרנט הזה</h2>
+
+  <h3>האתר אינו אוסף עליכם מידע</h3>
+  <p>אתר זה הוא אתר סטטי — דפי HTML בלבד. לצורך הבהירות, בפירוט:</p>
   <ul>
-    <li><b>פרטי זיהוי בסיסיים</b> — שם ומספר טלפון של עובדת שדיווחה, ושיוכה לגן.</li>
-    <li><b>תוכן הדיווחים</b> — עדכוני נוכחות, שעות והיעדרויות שנשלחו לשירות.</li>
-    <li><b>מסמכים</b> — קבצים שנשלחו לצורך השכר (למשל אישורי מחלה וטפסים), הנשמרים כמסמכים סגורים.</li>
+    <li><strong>אין באתר טפסים.</strong> לא ניתן להזין בו שם, טלפון, דוא"ל או כל פרט אחר.</li>
+    <li><strong>אין באתר מערכת אנליטיקה.</strong> לא מותקנים בו Google&nbsp;Analytics, פיקסל של Meta, או כלי מדידה אחר כלשהו.</li>
+    <li><strong>האתר אינו שותל עוגיות (cookies).</strong> לא עוגיות שלנו ולא עוגיות של צד שלישי, ולכן גם אין צורך בבאנר הסכמה לעוגיות.</li>
+    <li><strong>אין באתר סקריפטים או משאבים של צד שלישי.</strong> אין גופנים חיצוניים, אין ספריות מרוחקות, אין וידג'טים משובצים ואין כפתורי שיתוף לרשתות חברתיות. כל התוכן והעיצוב נטענים מהאתר עצמו.</li>
+    <li><strong>אין הרשמה ואין חשבונות משתמש.</strong></li>
+    <li><strong>איננו מבצעים פרופיילינג ואיננו מוכרים מידע.</strong></li>
+  </ul>
+  <p>המשמעות: גלישה באתר זה, כשלעצמה, אינה יוצרת אצלנו רישום כלשהו עליכם.</p>
+
+  <h3>אירוח האתר</h3>
+  <p>האתר מתארח בשירות <strong>GitHub&nbsp;Pages</strong> של חברת GitHub,&nbsp;Inc. כמו כל שרת אינטרנט, שרתי הספק עשויים לתעד בלוגים טכניים את נתוני הבקשה (למשל כתובת IP, סוג הדפדפן והדף שנטען) לצורכי תפעול ואבטחה. תיעוד זה נעשה על ידי הספק ובשליטתו, ואנו איננו ניגשים אליו, איננו מקבלים ממנו דוחות ואיננו עושים בו שימוש. פרטים על עיבוד המידע אצל הספק מופיעים במדיניות הפרטיות של GitHub.</p>
+
+  <h3>פנייה אלינו</h3>
+  <p>אם תבחרו לפנות אלינו בדוא"ל או בטלפון מיוזמתכם — הפנייה עצמה, על הפרטים שתכללו בה, נשמרת בתיבת הדוא"ל או ביומן השיחות שלנו. השימוש בה הוא לצורך המענה לפנייה ולניהול הקשר העסקי בלבד, והיא נשמרת כל עוד הדבר נדרש לצורך זה או לפי חובת שמירה שבדין.</p>
+
+  <h2>חלק ב' — שירות דיווחי הנוכחות בוואטסאפ ("MK — דיווחי גנים")</h2>
+
+  <p>בנוסף לאתר, העסק מקים עבור לקוחותיו שירות לקליטת דיווחי נוכחות ומסמכים מצוותי גני ילדים באמצעות WhatsApp, וריכוזם עבור הנהלת הגן לצורך הכנת שכר. החלק הזה חל על <strong>השירות</strong>, ולא על הגלישה באתר.</p>
+
+  <p><strong>מצב השירות:</strong> השירות נמצא בשלבי הקמה וטרם החל לפעול. הפרק הזה מתאר כיצד הוא מתוכנן לטפל במידע, ויעודכן עם תחילת ההפעלה בפועל.</p>
+
+  <h3>איזה מידע נאסף בשירות</h3>
+  <ul>
+    <li><strong>פרטי זיהוי בסיסיים</strong> — שם ומספר טלפון של העובדת שדיווחה, ושיוכה לגן.</li>
+    <li><strong>תוכן הדיווחים</strong> — עדכוני נוכחות, שעות והיעדרויות שנשלחו לשירות.</li>
+    <li><strong>מסמכים</strong> — קבצים שנשלחו לצורך השכר (למשל אישורי מחלה וטפסים), הנשמרים כמסמכים סגורים.</li>
   </ul>
 
-  <h2>למה המידע משמש</h2>
-  <p>למטרה אחת: ריכוז דיווחי הנוכחות והמסמכים עבור הנהלת הגן לצורך הכנת השכר. המידע אינו משמש לפרסום, אינו נמכר ואינו מועבר לצד שלישי, למעט ספקי תשתית הנדרשים להפעלת השירות (אירוח ותקשורת) ולמעט מקום שבו הדין מחייב זאת.</p>
+  <h3>למה המידע משמש</h3>
+  <p>למטרה אחת: ריכוז דיווחי הנוכחות והמסמכים עבור הנהלת הגן לצורך הכנת השכר. המידע אינו משמש לפרסום, אינו נמכר ואינו מועבר לצד שלישי — למעט ספקי תשתית הנדרשים להפעלת השירות (אירוח ותקשורת), ולמעט מקום שבו הדין מחייב זאת.</p>
 
-  <h2>מי רואה את המידע</h2>
-  <p>הדיווחים של כל גן נגישים להנהלת אותו גן בלבד. הגישה התפעולית של מפעיל השירות מוגבלת לתחזוקת המערכת. נתוני כל לקוח (רשת גנים) מופרדים לוגית מנתוני לקוחות אחרים.</p>
+  <h3>מי רואה את המידע</h3>
+  <p>השירות מתוכנן כך שהדיווחים של כל גן נגישים להנהלת אותו גן בלבד, שהגישה התפעולית של מפעיל השירות מוגבלת לתחזוקת המערכת, ושנתוני כל לקוח (רשת גנים) מופרדים מנתוני לקוחות אחרים.</p>
 
-  <h2>אבטחה ושמירה</h2>
-  <p>המידע נשמר במאגר מאובטח בהצפנה, עם בקרת גישה ותיעוד פעולות. מסמכים ודיווחים נשמרים למשך התקופה הנדרשת לצורכי שכר והנהלת חשבונות על פי דין, או עד לבקשת הלקוח למחיקתם — המוקדם מביניהם בכפוף לחובות שמירה חוקיות. הלקוח (הנהלת הגן) רשאי לקבל בכל עת עותק מלא של הנתונים שלו.</p>
+  <h3>אבטחה ותקופת שמירה</h3>
+  <p>העסק מיישם אמצעי אבטחה בהתאם לחובותיו לפי חוק הגנת הפרטיות ותקנות הגנת הפרטיות (אבטחת מידע), ובכללם הגבלת גישה למורשים בלבד. פירוט אמצעי האבטחה שיופעלו בשירות יפורסם כאן עם תחילת ההפעלה. מסמכים ודיווחים נשמרים למשך התקופה הנדרשת לצורכי שכר והנהלת חשבונות על פי דין, או עד לבקשת הלקוח למחיקתם — המוקדם מביניהם, בכפוף לחובות שמירה חוקיות. הלקוח (הנהלת הגן) רשאי לקבל בכל עת עותק מלא של הנתונים שלו.</p>
 
-  <h2>WhatsApp</h2>
-  <p>השירות פועל באמצעות WhatsApp Business Platform של Meta. על ההודעות חלים גם תנאי השימוש ומדיניות הפרטיות של WhatsApp. השירות שולח הודעות תפעוליות בלבד (אישורי קבלה, תזכורות ועדכוני סטטוס) — לא הודעות שיווקיות.</p>
+  <h3>WhatsApp</h3>
+  <p>השירות פועל באמצעות WhatsApp Business Platform של Meta. על ההודעות חלים גם תנאי השימוש ומדיניות הפרטיות של WhatsApp. השירות שולח הודעות תפעוליות בלבד — אישורי קבלה, תזכורות ועדכוני סטטוס — ולא הודעות שיווקיות.</p>
 
-  <h2>זכויות ופניות</h2>
-  <p>עובדת או הנהלת גן המעוניינת לעיין במידע, לתקנו או לבקש את מחיקתו — מוזמנת לפנות אלינו ונטפל בפנייה בהקדם:</p>
-  <p><b>מנחם מענדל קסטיאל</b> · <a href="mailto:kastielmm@gmail.com">kastielmm@gmail.com</a> · ישראל</p>
+  <h2>מידע שמתקבל במסגרת עבודת הפיתוח</h2>
+  <p>במסגרת בניית אוטומציות ומערכות ללקוחות, העסק עשוי לקבל מהלקוח נתונים וחומרים לצורך ביצוע העבודה. חומרים אלה מעובדים <strong>עבור הלקוח ובהתאם להתקשרות עמו</strong>, משמשים אך ורק לצורך ביצוע העבודה שהוזמנה, ואינם מועברים לצד שלישי אלא בהסכמת הלקוח או לפי חובה שבדין. בעל העסק כפוף לחובת סודיות ביחס לחומרים אלה.</p>
+
+  <h2>הזכויות שלכם</h2>
+  <p>לפי חוק הגנת הפרטיות, התשמ"א-1981, ובכפוף לתנאים ולסייגים הקבועים בו, עומדות לכם הזכויות הבאות ביחס למידע אישי המוחזק אצלנו:</p>
+  <ul>
+    <li><strong>זכות עיון</strong> — לדעת אם מוחזק אצלנו מידע עליכם, ולעיין בו.</li>
+    <li><strong>זכות תיקון</strong> — לבקש לתקן מידע שאינו נכון, שלם, ברור או מעודכן.</li>
+    <li><strong>זכות מחיקה</strong> — לבקש את מחיקת המידע, בכפוף לחובות שמירה הקבועות בדין.</li>
+    <li><strong>זכות לקבל מידע על השימוש</strong> — לדעת לאיזו מטרה המידע נאסף ולמי הוא נמסר.</li>
+  </ul>
+  <p>לממש כל אחת מהזכויות האלה אפשר בפנייה לכתובת הדוא"ל שלמעלה. נשיב לפנייה בתוך הזמן הקבוע בדין. אם לא הייתם מרוצים מהטיפול, אתם רשאים לפנות אל <strong>הרשות להגנת הפרטיות</strong> במשרד המשפטים.</p>
+
+  <h2>שינויים במדיניות</h2>
+  <p>מדיניות זו עשויה להתעדכן. גרסה מעודכנת תפורסם בעמוד זה, ותאריך "עדכון אחרון" שבראשו ישקף את מועד השינוי.</p>
+
 </div>
 </main>
 
 <footer>
-  <div class="wrap">MK — דיווחי גנים · מנחם מענדל קסטיאל · ישראל · © 2026</div>
+  <div class="wrap">
+    <p class="legal">MK Flow</p>
+    <p>קסטיאל מנחם מענדל · עוסק פטור 208553966 · ברניקי 9 א, דירה 1, ירושלים 9330615</p>
+    <nav aria-label="קישורי תחתית">
+      <ul>
+        <li><a href="index.html">דף הבית</a></li>
+        <li><a href="accessibility.html">הצהרת נגישות</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
 
 </body>
